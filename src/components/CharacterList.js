@@ -22,9 +22,9 @@ export default function CharacterList() {
 
   return (
     <section className="character-list grid-view">
-      <h2>{characters.map(character => {
+      {characters.map(character => {
         return <CharacterCard key={character.id} character={character} />;
-      })}</h2>
+      })}
     </section>
   );
 }
